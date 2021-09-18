@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script data-ad-client="ca-pub-4802082361709378" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Giveaways</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/commands.css" />
+		<link rel="stylesheet" href="/fontawesome/all.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+		<link rel="shortcut icon" type="image/jpg" href="/img/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="giveaways, discord, GiveawaysBot, top.gg, give, dashboard, giveaways dashboard, giveaways commands, bots, discord bots" />
+		<meta name="description" content="Giveaways - Discord bot, create your giveaways now simple and easy with using our dashboard" />
+		<meta name="author" content="Giveaways" />
+		<meta property="og:title" content="Giveaways" />
+		<meta property="og:description" content="Giveaways - Discord bot, create your giveaways now simple and easy with using our dashboard" />
+		<meta property="og:url" content="https://cdn.discordapp.com/avatars/606026008109514762/1ce6c5f5dae36c6d85e590c48b9654a2.png?size=1024" />
+		<meta property="og:image" content="https://cdn.discordapp.com/avatars/606026008109514762/1ce6c5f5dae36c6d85e590c48b9654a2.png?size=1024" />
+		<meta name="theme-color" content="#515edd" />
+	
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+		<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark mt-3">
+			<div class="container">
+				<a class="navbar-brand" href="/"><img class="navbar-logo" src="https://cdn.discordapp.com/emojis/823634767797813268.png?v=1" width="35px" height="35px" /> Giveaways</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="/commands">Commands</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/shards">Shards</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/invite" target="_blank">Invite</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/support" target="_blank">Support</a>
+						</li>
+					</ul>
+					
+						<a href="/login"><button class="btn btn-login text-light"><i class="fad fa-sign-in-alt"></i> Login</button></a>
+					
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<section style="margin-top: 9%;">
+				<div class="row">
+					<div class="col-sm-6 my-1">
+						<h2 class="fw-bold">Giveaways Commands</h2>
+						<p class="command-descreption">Find all giveawaysbot commands and information you need fast and easy</p>
+					</div>
+					<div class="col-sm-6 my-1">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4802082361709378"
+							 crossorigin="anonymous"></script>
+						<!-- in Giveaways! -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:100%;height:90px"
+							 data-ad-client="ca-pub-4802082361709378"
+							 data-ad-slot="2212334135"></ins>
+						<script>
+							 (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+						<!--
+						<div class="card required-box p-3" id="voteRequired">
+							<button class="float-end close-tip" onclick="voteRequired.hidden = true; localStorage.voteRequired = true;"><i class="far fa-times"></i></button>
+							<p>What is vote required? You will find behind some commands Vote Required tag and it's mean that you should vote for the bot to get access to the command.</p>
+						</div>
+						<script>
+							if(localStorage.voteRequired){
+								voteRequired.hidden = true;
+							}
+						</script>
+						-->
+					</div>
+				</div>
+				<hr>
+			</section>
+			<div class="mt-4"></div>
+			<div class="row">
+				<div class="col-md-4 my-2">
+					<div class="card p-3">
+						<h5>Select Commands Category</h5>
+						<hr />
+						<button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
+						
+							<button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Giveaways Commands</button>
+						
+							<button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; Public Commands</button>
+						
+							<button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Administration Commands</button>
+						
+							<button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp; Premium Commands</button>
+						
+					</div>
+				</div>
+				<div class="col-md-8 my-2">
+					<input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" />
+					
+						
+							<div class="mt-4"></div>
+						
+						<div class="commands-section" id="Category0">
+							
+								<div class="accordion accordion-flush mt-2" id="gstart">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgstart">
+												 #gstart&nbsp; <span class="command-descreption">- To create giveaway quickly in the same channel</span>
+											</button>
+										</h2>
+										<div id="fgstart" class="accordion-collapse collapse" data-bs-parent="#gstart">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gstart 1d 1w Prize</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gend">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgend">
+												 #gend&nbsp; <span class="command-descreption">- To End Giveaway start</span>
+											</button>
+										</h2>
+										<div id="fgend" class="accordion-collapse collapse" data-bs-parent="#gend">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gend [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gcreate">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgcreate">
+												 #gcreate&nbsp; <span class="command-descreption">- Creates a giveaway in mentioned channel</span>
+											</button>
+										</h2>
+										<div id="fgcreate" class="accordion-collapse collapse" data-bs-parent="#gcreate">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gcreate #channel 1m 2w Prize</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gstart-role">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgstart-role">
+												 #gstart-role&nbsp; <span class="command-descreption">- To create Giveaway-role and bot give the winners the role</span>
+											</button>
+										</h2>
+										<div id="fgstart-role" class="accordion-collapse collapse" data-bs-parent="#gstart-role">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gstart-role @Support 1d 1w</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gend-role">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgend-role">
+												 #gend-role&nbsp; <span class="command-descreption">- To end Giveaway-role</span>
+											</button>
+										</h2>
+										<div id="fgend-role" class="accordion-collapse collapse" data-bs-parent="#gend-role">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gend-role [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gedit">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgedit">
+												 #gedit&nbsp; <span class="command-descreption">- To change the prize/winners/time</span>
+											</button>
+										</h2>
+										<div id="fgedit" class="accordion-collapse collapse" data-bs-parent="#gedit">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gedit winners [ID Giveaway] [winners]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gdel">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgdel">
+												 #gdel&nbsp; <span class="command-descreption">- To Remove Giveaway</span>
+											</button>
+										</h2>
+										<div id="fgdel" class="accordion-collapse collapse" data-bs-parent="#gdel">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gdel [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="greroll">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgreroll">
+												 #greroll&nbsp; <span class="command-descreption">- To Choose a new winner</span>
+											</button>
+										</h2>
+										<div id="fgreroll" class="accordion-collapse collapse" data-bs-parent="#greroll">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#greroll [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gpause">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgpause">
+												 #gpause&nbsp; <span class="command-descreption">- Pauses the giveaway</span>
+											</button>
+										</h2>
+										<div id="fgpause" class="accordion-collapse collapse" data-bs-parent="#gpause">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gpause [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gunpause">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgunpause">
+												 #gunpause&nbsp; <span class="command-descreption">- Unpauses the giveaway</span>
+											</button>
+										</h2>
+										<div id="fgunpause" class="accordion-collapse collapse" data-bs-parent="#gunpause">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gunpause [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gcountdown">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgcountdown">
+												 #gcountdown&nbsp; <span class="command-descreption">- Creates a Timer!</span>
+											</button>
+										</h2>
+										<div id="fgcountdown" class="accordion-collapse collapse" data-bs-parent="#gcountdown">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gcountdown 1m Event!</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gendcountdown">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgendcountdown">
+												 #gendcountdown&nbsp; <span class="command-descreption">- To End Timer</span>
+											</button>
+										</h2>
+										<div id="fgendcountdown" class="accordion-collapse collapse" data-bs-parent="#gendcountdown">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gendcountdown [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gdrop">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgdrop">
+												 #gdrop&nbsp; <span class="command-descreption">- Drop a prize for a time</span>
+											</button>
+										</h2>
+										<div id="fgdrop" class="accordion-collapse collapse" data-bs-parent="#gdrop">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gdrop nitro</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+					
+						
+						<div class="commands-section" id="Category1">
+							
+								<div class="accordion accordion-flush mt-2" id="gping">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgping">
+												 #gping&nbsp; <span class="command-descreption">- To show the ping bot</span>
+											</button>
+										</h2>
+										<div id="fgping" class="accordion-collapse collapse" data-bs-parent="#gping">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gping</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="grank">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgrank">
+												 #grank&nbsp; <span class="command-descreption">- To show your wins total and last prize</span>
+											</button>
+										</h2>
+										<div id="fgrank" class="accordion-collapse collapse" data-bs-parent="#grank">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#grank</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="ginvite">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fginvite">
+												 #ginvite&nbsp; <span class="command-descreption">- To invite the bot to your server</span>
+											</button>
+										</h2>
+										<div id="fginvite" class="accordion-collapse collapse" data-bs-parent="#ginvite">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#ginvite</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="greport">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgreport">
+												 #greport&nbsp; <span class="command-descreption">- You can report a problem using this command</span>
+											</button>
+										</h2>
+										<div id="fgreport" class="accordion-collapse collapse" data-bs-parent="#greport">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#greport [Message]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+					
+						
+						<div class="commands-section" id="Category2">
+							
+								<div class="accordion accordion-flush mt-2" id="gdm">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgdm">
+												 #gdm&nbsp; <span class="command-descreption">- To enable or disable the winning DM</span>
+											</button>
+										</h2>
+										<div id="fgdm" class="accordion-collapse collapse" data-bs-parent="#gdm">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gdm enable/disable</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gset-lang">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgset-lang">
+												 #gset-lang&nbsp; <span class="command-descreption">- To change the bot language</span>
+											</button>
+										</h2>
+										<div id="fgset-lang" class="accordion-collapse collapse" data-bs-parent="#gset-lang">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gset-lang en/tr/ar/ru</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gfix">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgfix">
+												 #gfix&nbsp; <span class="command-descreption">- To fix the stopped giveaway</span>
+											</button>
+										</h2>
+										<div id="fgfix" class="accordion-collapse collapse" data-bs-parent="#gfix">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gfix [Message ID] [Winners] [Prize]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="ginfo-lang">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fginfo-lang">
+												 #ginfo-lang&nbsp; <span class="command-descreption">- To show what bot language is set to</span>
+											</button>
+										</h2>
+										<div id="fginfo-lang" class="accordion-collapse collapse" data-bs-parent="#ginfo-lang">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#ginfo-lang</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="glistblack">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fglistblack">
+												 #glistblack&nbsp; <span class="command-descreption">- Show blacklisted users list</span>
+											</button>
+										</h2>
+										<div id="fglistblack" class="accordion-collapse collapse" data-bs-parent="#glistblack">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#glistblack</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gsetlog">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgsetlog">
+												 #gsetlog&nbsp; <span class="command-descreption">- Set Logs Channel</span>
+											</button>
+										</h2>
+										<div id="fgsetlog" class="accordion-collapse collapse" data-bs-parent="#gsetlog">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gsetlog [Channel]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gemoji">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgemoji">
+												 #gemoji&nbsp; <span class="command-descreption">- Add emoji to your server</span>
+											</button>
+										</h2>
+										<div id="fgemoji" class="accordion-collapse collapse" data-bs-parent="#gemoji">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gemoji [Message ID]</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gblacklist">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgblacklist">
+												 #gblacklist&nbsp; <span class="command-descreption">- Blacklist a user from joining giveaways</span>
+											</button>
+										</h2>
+										<div id="fgblacklist" class="accordion-collapse collapse" data-bs-parent="#gblacklist">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gblacklist @Fnr</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gunblacklist">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgunblacklist">
+												 #gunblacklist&nbsp; <span class="command-descreption">- To remove user from blacklist</span>
+											</button>
+										</h2>
+										<div id="fgunblacklist" class="accordion-collapse collapse" data-bs-parent="#gunblacklist">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gunblacklist @Fnr</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gsetage">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgsetage">
+												 #gsetage&nbsp; <span class="command-descreption">- You can specify the age of the account that can participate in giveaway</span>
+											</button>
+										</h2>
+										<div id="fgsetage" class="accordion-collapse collapse" data-bs-parent="#gsetage">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gsetage (30d / 1y)</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+					
+						
+						<div class="commands-section" id="Category3">
+							
+								<div class="accordion accordion-flush mt-2" id="gvip">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgvip">
+												<span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; #gvip&nbsp; <span class="command-descreption">- Displays info about your premium bot.</span>
+											</button>
+										</h2>
+										<div id="fgvip" class="accordion-collapse collapse" data-bs-parent="#gvip">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gvip</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="gstart-req">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgstart-req">
+												<span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; #gstart-req&nbsp; <span class="command-descreption">- To create giveaway with premium features</span>
+											</button>
+										</h2>
+										<div id="fgstart-req" class="accordion-collapse collapse" data-bs-parent="#gstart-req">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#gstart-req 1d 1w Prize</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="glevel">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fglevel">
+												<span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; #glevel&nbsp; <span class="command-descreption">- Shows specific user&#39;s level</span>
+											</button>
+										</h2>
+										<div id="fglevel" class="accordion-collapse collapse" data-bs-parent="#glevel">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#glevel @User</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="accordion accordion-flush mt-2" id="ginvites">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fginvites">
+												<span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; #ginvites&nbsp; <span class="command-descreption">- Shows specific user&#39;s invites</span>
+											</button>
+										</h2>
+										<div id="fginvites" class="accordion-collapse collapse" data-bs-parent="#ginvites">
+											<div class="accordion-body">
+												<span>Usage:</span> <br />
+												<span class="examples">#ginvites @User</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="my-5"></div>
+		
+		<input id="commands" value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Giveaways Commands&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;#gstart&#34;,&#34;description&#34;:&#34;To create giveaway quickly in the same channel&#34;,&#34;usage&#34;:&#34;#gstart 1d 1w Prize&#34;},{&#34;name&#34;:&#34;#gend&#34;,&#34;description&#34;:&#34;To End Giveaway start&#34;,&#34;usage&#34;:&#34;#gend [Message ID]&#34;},{&#34;name&#34;:&#34;#gcreate&#34;,&#34;description&#34;:&#34;Creates a giveaway in mentioned channel&#34;,&#34;usage&#34;:&#34;#gcreate #channel 1m 2w Prize&#34;},{&#34;name&#34;:&#34;#gstart-role&#34;,&#34;description&#34;:&#34;To create Giveaway-role and bot give the winners the role&#34;,&#34;usage&#34;:&#34;#gstart-role @Support 1d 1w&#34;},{&#34;name&#34;:&#34;#gend-role&#34;,&#34;description&#34;:&#34;To end Giveaway-role&#34;,&#34;usage&#34;:&#34;#gend-role [Message ID]&#34;},{&#34;name&#34;:&#34;#gedit&#34;,&#34;description&#34;:&#34;To change the prize/winners/time&#34;,&#34;usage&#34;:&#34;#gedit winners [ID Giveaway] [winners]&#34;},{&#34;name&#34;:&#34;#gdel&#34;,&#34;description&#34;:&#34;To Remove Giveaway&#34;,&#34;usage&#34;:&#34;#gdel [Message ID]&#34;},{&#34;name&#34;:&#34;#greroll&#34;,&#34;description&#34;:&#34;To Choose a new winner&#34;,&#34;usage&#34;:&#34;#greroll [Message ID]&#34;},{&#34;name&#34;:&#34;#gpause&#34;,&#34;description&#34;:&#34;Pauses the giveaway&#34;,&#34;usage&#34;:&#34;#gpause [Message ID]&#34;},{&#34;name&#34;:&#34;#gunpause&#34;,&#34;description&#34;:&#34;Unpauses the giveaway&#34;,&#34;usage&#34;:&#34;#gunpause [Message ID]&#34;},{&#34;name&#34;:&#34;#gcountdown&#34;,&#34;description&#34;:&#34;Creates a Timer!&#34;,&#34;usage&#34;:&#34;#gcountdown 1m Event!&#34;},{&#34;name&#34;:&#34;#gendcountdown&#34;,&#34;description&#34;:&#34;To End Timer&#34;,&#34;usage&#34;:&#34;#gendcountdown [Message ID]&#34;},{&#34;name&#34;:&#34;#gdrop&#34;,&#34;description&#34;:&#34;Drop a prize for a time&#34;,&#34;usage&#34;:&#34;#gdrop nitro&#34;}]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Public Commands&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;#gping&#34;,&#34;description&#34;:&#34;To show the ping bot&#34;,&#34;usage&#34;:&#34;#gping&#34;},{&#34;name&#34;:&#34;#grank&#34;,&#34;description&#34;:&#34;To show your wins total and last prize&#34;,&#34;usage&#34;:&#34;#grank&#34;},{&#34;name&#34;:&#34;#ginvite&#34;,&#34;description&#34;:&#34;To invite the bot to your server&#34;,&#34;usage&#34;:&#34;#ginvite&#34;},{&#34;name&#34;:&#34;#greport&#34;,&#34;description&#34;:&#34;You can report a problem using this command&#34;,&#34;usage&#34;:&#34;#greport [Message]&#34;}]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Administration Commands&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;#gdm&#34;,&#34;description&#34;:&#34;To enable or disable the winning DM&#34;,&#34;usage&#34;:&#34;#gdm enable/disable&#34;},{&#34;name&#34;:&#34;#gset-lang&#34;,&#34;description&#34;:&#34;To change the bot language&#34;,&#34;usage&#34;:&#34;#gset-lang en/tr/ar/ru&#34;},{&#34;name&#34;:&#34;#gfix&#34;,&#34;description&#34;:&#34;To fix the stopped giveaway&#34;,&#34;usage&#34;:&#34;#gfix [Message ID] [Winners] [Prize]&#34;},{&#34;name&#34;:&#34;#ginfo-lang&#34;,&#34;description&#34;:&#34;To show what bot language is set to&#34;,&#34;usage&#34;:&#34;#ginfo-lang&#34;},{&#34;name&#34;:&#34;#glistblack&#34;,&#34;description&#34;:&#34;Show blacklisted users list&#34;,&#34;usage&#34;:&#34;#glistblack&#34;},{&#34;name&#34;:&#34;#gsetlog&#34;,&#34;description&#34;:&#34;Set Logs Channel&#34;,&#34;usage&#34;:&#34;#gsetlog [Channel]&#34;},{&#34;name&#34;:&#34;#gemoji&#34;,&#34;description&#34;:&#34;Add emoji to your server&#34;,&#34;usage&#34;:&#34;#gemoji [Message ID]&#34;},{&#34;name&#34;:&#34;#gblacklist&#34;,&#34;description&#34;:&#34;Blacklist a user from joining giveaways&#34;,&#34;usage&#34;:&#34;#gblacklist @Fnr&#34;},{&#34;name&#34;:&#34;#gunblacklist&#34;,&#34;description&#34;:&#34;To remove user from blacklist&#34;,&#34;usage&#34;:&#34;#gunblacklist @Fnr&#34;},{&#34;name&#34;:&#34;#gsetage&#34;,&#34;description&#34;:&#34;You can specify the age of the account that can participate in giveaway&#34;,&#34;usage&#34;:&#34;#gsetage (30d / 1y)&#34;}]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Premium Commands&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;#gvip&#34;,&#34;description&#34;:&#34;Displays info about your premium bot.&#34;,&#34;usage&#34;:&#34;#gvip&#34;,&#34;vip&#34;:true},{&#34;name&#34;:&#34;#gstart-req&#34;,&#34;description&#34;:&#34;To create giveaway with premium features&#34;,&#34;usage&#34;:&#34;#gstart-req 1d 1w Prize&#34;,&#34;vip&#34;:true},{&#34;name&#34;:&#34;#glevel&#34;,&#34;description&#34;:&#34;Shows specific user&#39;s level&#34;,&#34;usage&#34;:&#34;#glevel @User&#34;,&#34;vip&#34;:true},{&#34;name&#34;:&#34;#ginvites&#34;,&#34;description&#34;:&#34;Shows specific user&#39;s invites&#34;,&#34;usage&#34;:&#34;#ginvites @User&#34;,&#34;vip&#34;:true}]}]" hidden />
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="/fontawesome/all.min.js"></script>
+		<script src="/js/animation.js"></script>
+		<script>
+			function active(elm){
+				document.getElementById("CategoryBtnAll").classList.remove("active");
+				
+					document.getElementById("CategoryBtn0").classList.remove("active");
+					document.getElementById("Category0").setAttribute("hidden", "");
+				
+					document.getElementById("CategoryBtn1").classList.remove("active");
+					document.getElementById("Category1").setAttribute("hidden", "");
+				
+					document.getElementById("CategoryBtn2").classList.remove("active");
+					document.getElementById("Category2").setAttribute("hidden", "");
+				
+					document.getElementById("CategoryBtn3").classList.remove("active");
+					document.getElementById("Category3").setAttribute("hidden", "");
+				
+				elm.classList.add("active");
+				if(elm.id.replace("CategoryBtn", "") == "All"){
+					
+						document.getElementById("Category0").removeAttribute("hidden");
+					
+						document.getElementById("Category1").removeAttribute("hidden");
+					
+						document.getElementById("Category2").removeAttribute("hidden");
+					
+						document.getElementById("Category3").removeAttribute("hidden");
+					
+				}else{
+					document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
+				}
+			}
+			document.getElementById("CategoryBtnAll").click();
+			function search(arg){
+				let commands = JSON.parse(document.getElementById("commands").value);
+				let cmds = [];
+				commands.forEach(category => {
+					category.commands.forEach(command => {
+						cmds.push(command.name.toLowerCase());
+					})
+				})
+				let existedCmds = cmds.filter(obj => obj.includes(arg.toLowerCase()));
+				cmds.forEach(cmd => {
+					document.getElementById(cmd.replace("#", "")).setAttribute("hidden", "");
+				})
+				existedCmds.forEach(cmd => {
+					document.getElementById(cmd.replace("#", "")).removeAttribute("hidden");
+				})
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	</body>
+</html>
